@@ -6,24 +6,25 @@ The Caesar cipher is one of the simplest encryption techniques. It involves enco
 - https://www.khanacademy.org/computing/computer-science/cryptography/crypt/v/caesar-cipher
 
 ## Program Description
-This program implements a Caesar cipher that can encode and decode messages containing capital letters, lowercase letters, numbers, spaces, and symbols (for now, the symbols it can encode and decode are the following: **!@#$%^&*()_+{}|:-=[]\;,.<>?/** ). The program asks you if you want to encode or decode a message, and by inputting the shift value and message, the user can encode or decode it. Here is what a sample run of the program looks like: 
+This program implements a Caesar cipher that can encode and decode messages containing capital letters, lowercase letters, numbers, spaces, and symbols (for now, the symbols it can encode and decode are the following: **`~!@#$%^&*()_+|{}|:'"-=[]\;,.<>?/** ). The program asks you if you want to encode or decode a message, and by inputting the shift value and message, the user can encode or decode it. Here is what a sample run of the program looks like: 
 ```
-[Encoding]
-
 >>> Would you like to encode or decode a message? 
 (Type "e" for encode, "d" for decode): e
 >>> Type the secret message: 3nC0dED m355@gE!
 >>> Type a random positive integer shift value: 18
 (NOTE: if you want to decode the secret message later, you will need to use the same shift value!)
->>> The encoded message is :  l^UivWVh%lnn]yW[
+>>> The encoded message is :  FyEL7{%ouFOO-8{"
 
-[Decoding]
+>>> Would you like to run the program again? (y/n) y
 
 >>> Would you like to encode or decode a message? 
 (Type "e" for encode, "d" for decode): d
->>> Please type the message you would like to decode: l^UivWVh%lnn]yW[
+>>> Please type the message you would like to decode: FyEL7{%ouFOO-8{"
 >>> Please enter the shift value associated with the message: 18
 >>> The decoded message is :  3nC0dED m355@gE!
+
+>>> Would you like to run the program again? (y/n) n
+Thank you for using the Caesar Cipher!
 
 ```
 
