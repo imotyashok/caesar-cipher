@@ -1,6 +1,6 @@
 # Caesar Cipher
 
-CHAR_SET = "AMNBVCXZLKJHGFDSPOIUYTREWQ `~!@#$%^&*()_+|{}|:\'\"-=[]\;,.<>?/amnbvcxzlkjhgfdspoiuytrewq0192837465"
+CHAR_SET = "AMNBVCXZLKJHGFDSPOIUYTREWQ`~!@#$%^&*()_+|{}|:\'\"-=[]\;,.<>?/ amnbvcxzlkjhgfdspoiuytrewq0192837465"
 
 def encode(plaintext, shift):
     coded_message = ''
@@ -27,7 +27,7 @@ def decode(codetext, shift):
     return decoded_message
 
 def restart():
-    answer = input(">>> Would you like to run the program again? (y/n) ").lower()
+    answer = input("\n>>> Would you like to run the program again? (y/n) ").lower()
     if  answer == "y" or answer == "yes":
         return True
     elif answer == "n" or answer == "no":
@@ -40,7 +40,7 @@ def restart():
 def main():
     yes = True
     while yes:
-        choice = input(">>> Would you like to encode or decode a message? \n"
+        choice = input("\n>>> Would you like to encode or decode a message? \n"
               "(Type \"e\" for encode, \"d\" for decode): ").lower()
 
         if choice == 'e':
